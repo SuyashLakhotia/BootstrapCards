@@ -1,0 +1,75 @@
+@font-face {
+    font-family: Code;
+    src: url('/fonts/CODE.otf');
+}
+
+$body-font-stack: 'Myriad Pro', sans-serif;
+$heading-font-stack: 'Lucida Grande', sans-serif;
+
+$font-thin: 100;
+$font-light: 300;
+$font-normal: 400;
+$font-medium: 500;
+$font-bold: 700;
+
+
+body {
+    font-family: $body-font-stack;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: $heading-font-stack;
+    font-weight: $font-bold;
+    text-align: center;
+}
+
+h1 {
+    font-size: 36px;
+}
+
+h2 {
+    font-size: 32px;
+}
+
+h3 {
+    font-size: 28px;
+}
+
+h4 {
+    font-size: 24px;
+}
+
+h5 {
+    font-size: 20px;
+}
+
+h6 {
+    font-size: 18px;
+}
+
+p {
+    font-size: 16px;
+}
+
+a {
+    text-decoration: none;
+    color: #007edf;
+}
+
+a:hover, a:focus {
+    text-decoration: underline;
+}
+
+p a:hover, p a:focus, p a:active, p a:link, p a:visited {
+    text-decoration: none;
+}
+
+em {
+    font-style: italic;
+}
+
+strong {
+    font-weight: $font-bold;
+}

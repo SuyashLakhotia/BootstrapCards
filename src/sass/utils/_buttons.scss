@@ -1,0 +1,33 @@
+.btn,
+.btn:focus {
+    width: 100%;
+    letter-spacing: 1px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #000;
+    border: 3px solid #000;
+    border-radius: 0;
+    background-color: transparent;
+    @include transition(all .3s ease-in-out);
+}
+
+.btn:hover {
+    color: #fff;
+    border: 3px solid #000;
+    background-color: #000;
+}
+
+.btn-default {
+    font-size: 16px;
+}
+
+.btn-big {
+    font-size: 18px;
+    padding: 10px 10px;
+}
+
+.btn-wrapper {
+    margin: 5px;
+    padding: 5px;
+    text-align: center;
+}

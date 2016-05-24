@@ -1,0 +1,63 @@
+@mixin transition($args...) {
+    -webkit-transition: $args;
+    -moz-transition: $args;
+    -ms-transition: $args;
+    -o-transition: $args;
+    transition: $args;
+}
+
+@mixin animation($args...) {
+    -webkit-animation: $args;
+    -moz-animation: $args;
+    -ms-animation: $args;
+    -o-animation: $args;
+    animation: $args;
+}
+
+@mixin transform($args...) {
+    -webkit-transform: $args;
+    -moz-transform: $args;
+    -ms-transform: $args;
+    -o-transform: $args;
+    transform: $args;
+}
+
+@mixin animation-delay($arg) {
+    -webkit-animation-delay: $arg;
+    -moz-animation-delay: $arg;
+    -ms-animation-delay: $arg;
+    -o-animation-delay: $arg;
+    animation-delay: $arg;
+}
+
+@mixin animation-duration($arg) {
+    -webkit-animation-duration: $arg;
+    -moz-animation-duration: $arg;
+    -ms-animation-duration: $arg;
+    -o-animation-duration: $arg;
+    animation-duration: $arg;
+}
+
+@mixin large-screens-only {
+    @media only screen and (min-width: 1024px) {
+        @content;
+    }
+}
+
+@mixin medium-screens-up {
+    @media screen and (min-width: 768px) {
+        @content;
+    }
+}
+
+@mixin medium-screens-only {
+    @media screen and (min-width: 768px) and (max-width: 1023px) {
+        @content;
+    }
+}
+
+@mixin small-screens-only {
+    @media only screen and (max-width: 767px) {
+        @content;
+    }
+}
