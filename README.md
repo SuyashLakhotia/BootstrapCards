@@ -1,6 +1,8 @@
 # Bootstrap Cards
 &mdash; *Bootstrap template implementing card-based design.*
 
+![Screenshot](/z - Screenshots/1.png)
+
 ## How to Install
 
 ### Default *Bootstrap Cards*
