@@ -5,7 +5,7 @@
 
 ### Default *Bootstrap Cards*
 
-1. Download this repo.
+1. Download this repo [here](https://github.com/SuyashLakhotia/BootstrapCards/archive/master.zip).
 2. Navigate to the `dist/` folder on Terminal.
 3. Install all the Bower dependencies using `bower install`.
 4. Copy the contents of `dist/` to your project folder.
@@ -14,7 +14,7 @@
 
 #### Setup
 
-1. Download this repo.
+1. Download this repo [here](https://github.com/SuyashLakhotia/BootstrapCards/archive/master.zip).
 2. Install Gulp globally using `npm install -g gulp-cli`.
 3. Install the Node.js modules needed in this project using `npm install`.
 4. Navigate to `dist/` and install all the Bower dependencies using `bower install`.
