@@ -86,15 +86,16 @@ Jumbotron Styles
 
 @include small-screens-only {
     .jumbotron-wrapper {
-        min-height: 50vh;
+        min-height: 60vh;
     }
 
     .jumbotron-content {
-        padding: 30px 0 120px 0;
+        padding-top: 40px;
+        padding-bottom: 80px;
         
         #name {
             font-size: 350%;
-            padding-top: 35px;
+            padding-top: 60px;
         }
         
         #tagline {
