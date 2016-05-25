@@ -11,59 +11,53 @@ var jshint = require('gulp-jshint');
 
 // Init BrowserSync
 gulp.task('browserSync', function() {
-	browserSync.init({
-    	server: {
-      		baseDir: 'dist'
-    	},
-  	});
+    browserSync.init({ server: { baseDir: 'dist' } });
 });
 
 // Lint Bootstrap
 gulp.task('bootlint', function() {
     return gulp.src('src/*.html')
-        .pipe(bootlint());
+    .pipe(bootlint());
 });
 
 // Compile Sass
 gulp.task('sass', function() {
-  	return gulp.src('src/sass/main.scss')
-  		.pipe(sass({outputStyle: 'expanded'}).on('error', sass.logError))
-    	.pipe(rename('cards.css'))
-    	.pipe(gulp.dest('dist/css'))
-    	.pipe(browserSync.reload({
-      		stream: true
-    	}));
+    return gulp.src('src/sass/main.scss')
+    .pipe(sass({outputStyle: 'expanded'}).on('error', sass.logError))
+    .pipe(rename('cards.css'))
+    .pipe(gulp.dest('dist/css'))
+    .pipe(browserSync.reload({stream: true}));
 });
 
 // Lint JS
 gulp.task('lint', function() {
     return gulp.src('src/js/**/*.js')
-        .pipe(jshint())
-        .pipe(jshint.reporter('default'));
+    .pipe(jshint())
+    .pipe(jshint.reporter('default'));
 });
 
 // Copy JS
 gulp.task('copyJS', function() {
     return gulp.src('src/js/**/*.js')
-        .pipe(gulp.dest('dist/js'));
+    .pipe(gulp.dest('dist/js'));
 });
 
 // Copy HTML
 gulp.task('copyHTML', function () {
     return gulp.src('src/*.html')
-        .pipe(gulp.dest('dist'));
+    .pipe(gulp.dest('dist'));
 });
 
 // Copy Images
 gulp.task('copyImg', function () {
     return gulp.src('src/img/*.*')
-        .pipe(gulp.dest('dist/img'));
+    .pipe(gulp.dest('dist/img'));
 });
 
 // Copy Fonts
 gulp.task('copyFonts', function () {
     return gulp.src('src/fonts/*.*')
-        .pipe(gulp.dest('dist/fonts'));
+    .pipe(gulp.dest('dist/fonts'));
 });
 
 // Watch Files For Changes
