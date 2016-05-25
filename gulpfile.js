@@ -3,6 +3,7 @@ var gulp = require('gulp');
 
 // Include Plugins
 var browserSync = require('browser-sync').create();
+var bootlint = require('gulp-bootlint');
 var rename = require('gulp-rename');
 var sass = require('gulp-sass');
 var jshint = require('gulp-jshint');
@@ -15,6 +16,12 @@ gulp.task('browserSync', function() {
       		baseDir: 'dist'
     	},
   	});
+});
+
+// Lint Bootstrap
+gulp.task('bootlint', function() {
+    return gulp.src('src/*.html')
+        .pipe(bootlint());
 });
 
 // Compile Sass
@@ -60,10 +67,10 @@ gulp.task('copyFonts', function () {
 });
 
 // Watch Files For Changes
-gulp.task('watch', ['browserSync', 'sass', 'lint', 'copyJS', 'copyHTML', 'copyImg', 'copyFonts'], function() {
+gulp.task('watch', ['browserSync', 'bootlint', 'sass', 'lint', 'copyJS', 'copyHTML', 'copyImg', 'copyFonts'], function() {
     gulp.watch('src/sass/**/*.scss', ['sass']);
     gulp.watch('src/js/**/*.js', ['lint', 'copyJS']);
-    gulp.watch('src/*.html', ['copyHTML']);
+    gulp.watch('src/*.html', ['bootlint', 'copyHTML']);
     gulp.watch('src/img/*.*', ['copyImg']);
     gulp.watch('src/fonts/*.*', ['copyFonts']);
     gulp.watch('src/*.html', browserSync.reload);

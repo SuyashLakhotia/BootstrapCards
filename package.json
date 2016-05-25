@@ -19,6 +19,7 @@
   "devDependencies": {
     "browser-sync": "^2.12.8",
     "gulp": "^3.9.1",
+    "gulp-bootlint": "^0.8.0",
     "gulp-jshint": "^2.0.1",
     "gulp-rename": "^1.2.2",
     "gulp-sass": "^2.3.1",
