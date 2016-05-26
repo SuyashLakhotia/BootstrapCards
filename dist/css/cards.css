@@ -262,7 +262,7 @@ Jumbotron Styles
   animation-duration: 1s;
 }
 
-.jumbotron-content #name {
+.jumbotron-content #title {
   font-family: Code, "Lucida Grande", sans-serif;
   font-weight: 300;
 }
@@ -286,6 +286,9 @@ Jumbotron Styles
 
 .btn-scroll-wrapper .btn-scroll,
 .btn-scroll-wrapper .btn-scroll:focus {
+  font-size: 40px;
+  width: 65px;
+  height: 65px;
   -webkit-transition: all 0.3s ease-in-out;
   -moz-transition: all 0.3s ease-in-out;
   -ms-transition: all 0.3s ease-in-out;
@@ -302,19 +305,11 @@ Jumbotron Styles
   background-color: #fff;
 }
 
-@media only screen and (min-width: 1024px) {
-  .btn-scroll-wrapper .btn-scroll {
-    font-size: 40px;
-    width: 65px;
-    height: 65px;
-  }
-}
-
 @media screen and (min-width: 768px) {
-  .jumbotron-wrapper {
+  .jumbotron-big {
     height: 100vh;
   }
-  .jumbotron-content {
+  .jumbotron-big .jumbotron-content {
     position: relative;
     top: 45%;
     -webkit-transform: translateY(-50%);
@@ -323,38 +318,43 @@ Jumbotron Styles
     -o-transform: translateY(-50%);
     transform: translateY(-50%);
   }
-  .jumbotron-content #name {
-    font-size: 680%;
+  .jumbotron-big .jumbotron-content #title {
+    font-size: 720%;
   }
-}
-
-@media screen and (min-width: 768px) and (max-width: 1023px) {
-  .btn-scroll-wrapper .btn-scroll {
-    font-size: 32px;
-    width: 55px;
-    height: 55px;
+  .jumbotron-small {
+    height: 70vh;
+  }
+  .jumbotron-small .jumbotron-content {
+    position: relative;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%);
+  }
+  .jumbotron-small .jumbotron-content #title {
+    font-size: 600%;
   }
 }
 
 @media only screen and (max-width: 767px) {
-  .jumbotron-wrapper {
+  .jumbotron-big {
     min-height: 60vh;
+  }
+  .jumbotron-small {
+    min-height: 50vh;
   }
   .jumbotron-content {
     padding-top: 40px;
     padding-bottom: 80px;
   }
-  .jumbotron-content #name {
+  .jumbotron-content #title {
     font-size: 350%;
     padding-top: 60px;
   }
   .jumbotron-content #tagline {
     font-size: 150%;
-  }
-  .btn-scroll-wrapper .btn-scroll {
-    font-size: 28px;
-    width: 50px;
-    height: 50px;
   }
 }
 

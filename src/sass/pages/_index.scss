@@ -15,7 +15,7 @@ Jumbotron Styles
 }
 
 .jumbotron-content {
-    #name {
+    #title {
         font-family: Code, $heading-font-stack;
         font-weight: $font-light;
     }
@@ -39,6 +39,9 @@ Jumbotron Styles
 
     .btn-scroll,
     .btn-scroll:focus {
+        font-size: 40px;
+        width: 65px;
+        height: 65px;
         @include transition(all .3s ease-in-out);
         color: #fff;
         border: 2px solid #fff;
@@ -52,48 +55,50 @@ Jumbotron Styles
     }
 }
 
-@include large-screens-only {
-    .btn-scroll-wrapper .btn-scroll {
-        font-size: 40px;
-        width: 65px;
-        height: 65px;
-    }
-}
-
 @include medium-screens-up {
-    .jumbotron-wrapper {
+    .jumbotron-big {
         height: 100vh;
+
+        .jumbotron-content {
+            position: relative;
+            top: 45%;
+            @include transform(translateY(-50%));
+
+            #title {
+                font-size: 720%;
+            }
+        }
     }
 
-    .jumbotron-content {
-        position: relative;
-        top: 45%;
-        @include transform(translateY(-50%));
+    .jumbotron-small {
+        height: 70vh;
 
-        #name {
-            font-size: 680%;
+        .jumbotron-content {
+            position: relative;
+            top: 50%;
+            @include transform(translateY(-50%));
+
+            #title {
+                font-size: 600%;
+            }
         }
     }
 }
 
-@include medium-screens-only {
-    .btn-scroll-wrapper .btn-scroll {
-        font-size: 32px;
-        width: 55px;
-        height: 55px;
-    }
-}
-
 @include small-screens-only {
-    .jumbotron-wrapper {
+    .jumbotron-big {
         min-height: 60vh;
+    }
+
+    .jumbotron-small {
+        min-height: 50vh;
     }
 
     .jumbotron-content {
         padding-top: 40px;
         padding-bottom: 80px;
         
-        #name {
+        #title {
             font-size: 350%;
             padding-top: 60px;
         }
@@ -101,12 +106,6 @@ Jumbotron Styles
         #tagline {
             font-size: 150%;
         }
-    }
-
-    .btn-scroll-wrapper .btn-scroll {
-        font-size: 28px;
-        width: 50px;
-        height: 50px;
     }
 }
 
