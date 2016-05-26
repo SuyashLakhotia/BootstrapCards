@@ -62,7 +62,3 @@ Listed below are all the Bower components used in *Bootstrap Cards*. The ones in
 - Animate.css ([https://daneden.github.io/animate.css/](https://daneden.github.io/animate.css/))
 - wow.js ([http://mynameismatthieu.com/WOW/](http://mynameismatthieu.com/WOW/))
 - jQuery Easing Plugin ([https://github.com/gdsmith/jquery.easing](https://github.com/gdsmith/jquery.easing))
-
-## To-Do
-- [ ] Main Blog Page
-- [ ] Blog Post Page
