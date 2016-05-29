@@ -63,7 +63,7 @@ Navbar Styles
     }
     
     .navbar-img {
-        height: 50px;
+        height: 55px;
         padding: 10px 0 0 0;
         @include transition(all .5s ease-in-out);
     }
@@ -74,7 +74,13 @@ Navbar Styles
 }
 
 @include large-screens-only {
-    .navbar-default {
+    .navbar {
+        > .container-fluid {
+            padding-right: 30px;
+        }
+    }
+
+    .navbar-transition {
         padding: 20px 0 0 0;
         background-color: transparent;
         border-bottom: 0;
@@ -85,7 +91,7 @@ Navbar Styles
         }
     }
     
-    .navbar-default.top-nav-collapse {
+    .navbar-transition.navbar-collapse {
         padding: 0;
         background-color: $nav-color;
         border-bottom: 1px solid rgba(255, 255, 255, .3);
