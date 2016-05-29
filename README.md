@@ -37,6 +37,7 @@
 |   |   | - pages/
 |   |   | - utils/
 |   |   | - main.scss
+|   | - blog.html
 |   | - index.html
 ```
 
