@@ -512,3 +512,45 @@ Blog Page Styles
   font-style: italic;
   color: #878787;
 }
+
+/*******************************************************************************
+Blog Post Styles
+*******************************************************************************/
+.jumbotron-blogpost .blogpost-title {
+  font-family: Code, "Lucida Grande", sans-serif;
+  font-size: 450%;
+  font-weight: 100;
+  text-align: center;
+  color: #fff;
+  margin-top: 0;
+}
+
+.jumbotron-blogpost .blogpost-time {
+  font-size: 120%;
+  font-weight: 100;
+  padding: 20px 0 0 0;
+  text-align: center;
+  color: #fff;
+}
+
+.content-blogpost {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.content-blogpost .blog-post {
+  text-align: justify;
+}
+
+@media only screen and (max-width: 767px) {
+  .jumbotron-blogpost .blogpost-title {
+    font-size: 300%;
+    padding-top: 75px;
+  }
+  .jumbotron-blogpost .blogpost-time {
+    font-size: 120%;
+  }
+  .content-blogpost .blog-post {
+    text-align: left;
+  }
+}
