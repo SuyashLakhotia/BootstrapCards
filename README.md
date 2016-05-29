@@ -46,9 +46,9 @@
 - `src/*.html`: Gulp copies them over to `dist/`.
 
 ##### Sass Files
-- `sass/layout/`: Contains styles for the navbar and footer.
+- `sass/layout/`: Contains styles for the navbar, jumbotron, cards & footer.
 - `sass/pages/`: Contains page-specific styles.
-- `sass/utils/`: Contains globally used variables, mixins & styles.
+- `sass/utils/`: Contains globally used variables, mixins & base styles.
 - `sass/main.scss`: Imports all the necessary Sass files.
 
 ## Bower Components

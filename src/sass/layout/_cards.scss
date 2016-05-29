@@ -1,0 +1,31 @@
+/*******************************************************************************
+Cards Styles
+*******************************************************************************/
+
+.card-wrapper {
+    position: relative;
+    background: #fff;
+    box-shadow: 0 0 5px #777;
+}
+
+.card-big {
+    margin: 20px 0;
+    padding: 20px 30px 40px 30px;
+}
+
+.card-small {
+    margin: 10px 0;
+    padding: 10px 40px 10px 40px;
+}
+
+@include small-screens-only {
+    .card-big {
+        padding-right: 10px;
+        padding-left: 10px;
+    }
+
+    .card-small {
+        margin: 25px 0;
+        padding: 20px 10px 30px 10px;
+    }
+}
