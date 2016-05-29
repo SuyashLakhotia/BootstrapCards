@@ -229,24 +229,10 @@ Navbar Styles
 }
 
 /*******************************************************************************
-Footer Styles
-*******************************************************************************/
-.footer {
-  width: 100%;
-  padding: 10px 0 0 0;
-  color: #fff;
-  background: #000;
-}
-
-.footer p {
-  font-size: 14px;
-}
-
-/*******************************************************************************
 Jumbotron Styles
 *******************************************************************************/
 .jumbotron-wrapper {
-  padding: 0 10px;
+  padding: 0 40px;
   color: #fff;
   background: #000;
   position: relative;
@@ -325,11 +311,11 @@ Jumbotron Styles
     font-size: 720%;
   }
   .jumbotron-small {
-    height: 70vh;
+    height: 60vh;
   }
   .jumbotron-small .jumbotron-content {
     position: relative;
-    top: 50%;
+    top: 55%;
     -webkit-transform: translateY(-50%);
     -moz-transform: translateY(-50%);
     -ms-transform: translateY(-50%);
@@ -337,7 +323,7 @@ Jumbotron Styles
     transform: translateY(-50%);
   }
   .jumbotron-small .jumbotron-content #title {
-    font-size: 600%;
+    font-size: 500%;
   }
 }
 
@@ -362,7 +348,51 @@ Jumbotron Styles
 }
 
 /*******************************************************************************
-Main Content Styles
+Cards Styles
+*******************************************************************************/
+.card-wrapper {
+  position: relative;
+  background: #fff;
+  box-shadow: 0 0 5px #777;
+}
+
+.card-big {
+  margin: 20px 0;
+  padding: 20px 30px 40px 30px;
+}
+
+.card-small {
+  margin: 10px 0;
+  padding: 10px 40px 10px 40px;
+}
+
+@media only screen and (max-width: 767px) {
+  .card-big {
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+  .card-small {
+    margin: 25px 0;
+    padding: 20px 10px 30px 10px;
+  }
+}
+
+/*******************************************************************************
+Footer Styles
+*******************************************************************************/
+.footer {
+  width: 100%;
+  padding: 10px 0 0 0;
+  color: #fff;
+  background: #000;
+}
+
+.footer p {
+  font-size: 14px;
+}
+
+/*******************************************************************************
+Home Page Styles
 *******************************************************************************/
 .content-home {
   position: relative;
@@ -370,15 +400,7 @@ Main Content Styles
   padding-bottom: 20px;
 }
 
-.content-home .card-wrap {
-  position: relative;
-  margin: 20px 0;
-  padding: 20px 30px 40px 30px;
-  background: #fff;
-  box-shadow: 0 0 5px #777;
-}
-
-.content-home .card-wrap h3 {
+.content-home .card-big h3 {
   font-family: "Raleway", "Lucida Grande", sans-serif;
   font-weight: 400;
   margin-bottom: 30px;
@@ -449,9 +471,4 @@ Main Content Styles
   color: #696969;
 }
 
-@media only screen and (max-width: 767px) {
-  .content-home .card-wrap {
-    padding-right: 10px;
-    padding-left: 10px;
-  }
 }
