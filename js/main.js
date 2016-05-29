@@ -14,10 +14,10 @@ $(function () {
 
     // Collapse navbar on scroll.
     $(window).scroll(function () {
-        if ($('.navbar-default').offset().top > 20) {
-            $('.navbar-default').addClass('top-nav-collapse');
+        if ($('.navbar-transition').offset().top > 20) {
+            $('.navbar-transition').addClass('navbar-collapse');
         } else {
-            $('.navbar-default').removeClass('top-nav-collapse');
+            $('.navbar-transition').removeClass('navbar-collapse');
         }
     });
 

@@ -174,7 +174,7 @@ Navbar Styles
 }
 
 .navbar-default .navbar-img {
-  height: 50px;
+  height: 55px;
   padding: 10px 0 0 0;
   -webkit-transition: all 0.5s ease-in-out;
   -moz-transition: all 0.5s ease-in-out;
@@ -188,7 +188,10 @@ Navbar Styles
 }
 
 @media only screen and (min-width: 1024px) {
-  .navbar-default {
+  .navbar > .container-fluid {
+    padding-right: 30px;
+  }
+  .navbar-transition {
     padding: 20px 0 0 0;
     background-color: transparent;
     border-bottom: 0;
@@ -198,15 +201,15 @@ Navbar Styles
     -o-transition: background 0.5s ease-in-out, padding 0.5s ease-in-out;
     transition: background 0.5s ease-in-out, padding 0.5s ease-in-out;
   }
-  .navbar-default .container-fluid {
+  .navbar-transition .container-fluid {
     margin: 0 15px 0 15px;
   }
-  .navbar-default.top-nav-collapse {
+  .navbar-transition.navbar-collapse {
     padding: 0;
     background-color: #000;
     border-bottom: 1px solid rgba(255, 255, 255, 0.3);
   }
-  .navbar-default.top-nav-collapse .navbar-img {
+  .navbar-transition.navbar-collapse .navbar-img {
     height: 45px;
   }
 }
