@@ -27,9 +27,10 @@
 2. To change the CSS, edit the Sass code inside `src/sass/`.
 3. To change the JS, edit the JS code inside `src/js/`.
 
-#### Contents of Source Folder &amp; Gulp Tasks
+#### Contents of Source Folder &amp; Overview of Gulp Tasks
 ```
 | - src/
+| - | - fonts/
 |   | - img/
 |   | - js/
 |   | - sass/
@@ -42,13 +43,14 @@
 |   | - index.html
 ```
 
+- `src/fonts/`: Contains all custom fonts. Gulp copies them over to `dist/fonts/`.
 - `src/img/`: Contains all images. Gulp copies them over to `dist/img/`.
 - `src/js/`: Contains all custom JavaScript files. Gulp lints them and then copies them over to `dist/js/`.
-- `src/sass/`: Contains all custom styles. Gulp lints them and then compiles `main.scss` into `dist/css/cards.css`.
+- `src/sass/`: Contains all custom styles. Gulp compiles `main.scss` into `dist/css/cards.css`.
 - `src/*.html`: Gulp copies them over to `dist/`.
 
 ##### Sass Files
-- `sass/layout/`: Contains styles for the navbar, jumbotron, cards & footer.
+- `sass/layout/`: Contains styles for the cards, navbar, jumbotrons &amp; footer.
 - `sass/pages/`: Contains page-specific styles.
 - `sass/utils/`: Contains globally used variables, mixins & base styles.
 - `sass/main.scss`: Imports all the necessary Sass files.
