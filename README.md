@@ -1,7 +1,7 @@
 # Bootstrap Cards
-&mdash; *Bootstrap template implementing card-based design.*
+&mdash; *Responsive Bootstrap template implementing card-based design. Demo [here](http://suyashlakhotia.com/BootstrapCards/).*
 
-![Screenshot](/z - Screenshots/1.png)
+![Screenshot](demo.gif)
 
 ## How to Install
 
