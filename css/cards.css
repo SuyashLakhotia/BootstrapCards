@@ -14,14 +14,15 @@ body {
   src: url("../fonts/CODE.otf");
 }
 
+/******************************************************************************/
 body {
-  font-family: "Myriad Pro", sans-serif;
+  font-family: "Lato", "Myriad Pro", sans-serif;
   font-size: 16px;
   line-height: 1.5;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Lucida Grande", sans-serif;
+  font-family: "Raleway", "Lucida Grande", sans-serif;
   font-weight: 700;
   text-align: center;
 }
@@ -252,12 +253,12 @@ Jumbotron Styles
 }
 
 .jumbotron-content #title {
-  font-family: Code, "Lucida Grande", sans-serif;
+  font-family: Code, "Raleway", "Lucida Grande", sans-serif;
   font-weight: 300;
 }
 
 .jumbotron-content #tagline {
-  font-family: Code, "Lucida Grande", sans-serif;
+  font-family: Code, "Raleway", "Lucida Grande", sans-serif;
   font-weight: 300;
   padding-top: 10px;
   padding-bottom: 30px;
@@ -409,7 +410,6 @@ Home Page Styles
 }
 
 .content-home .card-big h3 {
-  font-family: "Raleway", "Lucida Grande", sans-serif;
   font-weight: 400;
   margin-bottom: 30px;
   letter-spacing: 2px;
@@ -433,16 +433,12 @@ Home Page Styles
   letter-spacing: 0.5px;
 }
 
-.stamps-section {
+.card-stamps {
   margin-bottom: 15px;
 }
 
-.stamps-section > h6 {
-  font-size: 18px;
-  font-weight: 500;
-}
-
-.stamps-section .stamp {
+.card-stamps .card-stamp {
+  font-family: "Lato", "Myriad Pro", sans-serif;
   font-weight: 300;
   color: white;
   border: 5px solid #fff;
@@ -451,29 +447,30 @@ Home Page Styles
   box-shadow: 0 0 0 3px #434343;
 }
 
-.stamps-section h4.stamp {
+.card-stamps h4.card-stamp {
   font-size: 16px;
 }
 
-.stamps-section h5.stamp {
+.card-stamps h5.card-stamp {
   font-size: 15px;
 }
 
-.stamps-section h6.stamp {
+.card-stamps h6.card-stamp {
   font-size: 14px;
 }
 
-.custom-blockquote {
+.card-blockquote {
   border-left: 5px solid #d6d6d6;
   border-right: 5px solid #d6d6d6;
   background-color: #f6f6f6;
 }
 
-.project {
+.card-projects .project {
   margin-top: 25px;
 }
 
-.project .project-details {
+.card-projects .project .project-details {
+  font-family: "Lato", "Myriad Pro", sans-serif;
   font-size: 14px;
   text-align: center;
   color: #696969;
@@ -497,7 +494,8 @@ Blog Page Styles
   color: #000;
 }
 
-.content-blog .card-small a:hover, .content-blog .card-small a:focus {
+.content-blog .card-small a:hover,
+.content-blog .card-small a:focus {
   text-decoration: none;
 }
 
@@ -509,8 +507,9 @@ Blog Page Styles
 }
 
 .content-blog .card-small .post-subtitle {
+  font-family: "Lato", "Myriad Pro", sans-serif;
   font-size: 15px;
-  font-weight: 300;
+  font-weight: 400;
   line-height: 1.5;
   text-align: left;
 }
@@ -525,7 +524,7 @@ Blog Page Styles
 Blog Post Styles
 *******************************************************************************/
 .jumbotron-blogpost .blogpost-title {
-  font-family: Code, "Lucida Grande", sans-serif;
+  font-family: Code, "Raleway", "Lucida Grande", sans-serif;
   font-size: 450%;
   font-weight: 100;
   text-align: center;
@@ -534,6 +533,7 @@ Blog Post Styles
 }
 
 .jumbotron-blogpost .blogpost-time {
+  font-family: Code, "Raleway", "Lucida Grande", sans-serif;
   font-size: 120%;
   font-weight: 100;
   padding: 20px 0 0 0;
