@@ -20,6 +20,7 @@
 2. Install Gulp globally using `npm install -g gulp-cli`.
 3. Install the Node.js modules needed in this project using `npm install`.
 4. Navigate to `dist/` and install all the Bower dependencies using `bower install`.
+5. (Optional) This project uses [HTML-CSS-JS Prettify for Sublime Text](https://github.com/victorporof/Sublime-HTMLPrettify) to maintain a consistent coding style. The custom options are defined in `.jsbeautifyrc`.
 
 #### Writing Code
 
