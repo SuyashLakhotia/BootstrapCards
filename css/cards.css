@@ -76,6 +76,12 @@ strong {
   font-weight: 700;
 }
 
+.btn-wrapper {
+  margin: 5px;
+  padding: 5px;
+  text-align: center;
+}
+
 .btn,
 .btn:focus {
   width: 100%;
@@ -106,12 +112,6 @@ strong {
 .btn-big {
   font-size: 18px;
   padding: 10px 10px;
-}
-
-.btn-wrapper {
-  margin: 5px;
-  padding: 5px;
-  text-align: center;
 }
 
 /*******************************************************************************
