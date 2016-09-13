@@ -1,0 +1,11 @@
+{
+    "html": {
+        "indent_scripts": "normal",
+        "max_preserve_newlines": 2,
+        "preserve_newlines": true
+    },
+    "js": {
+        "max_preserve_newlines": 2,
+        "preserve_newlines": true
+    }
+}

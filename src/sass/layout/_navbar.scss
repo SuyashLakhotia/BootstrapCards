@@ -6,7 +6,6 @@ $nav-color: #000;
 $nav-item-color: #000;
 $nav-item-alt-color: #323232;
 
-
 /*******************************************************************************
 Navbar Styles
 *******************************************************************************/
@@ -16,7 +15,6 @@ Navbar Styles
     text-transform: uppercase;
     border-bottom: 1px solid rgba(255, 255, 255, .3);
     background-color: $nav-color;
-    
     .navbar-nav {
         > li > a,
         > li > a:focus {
@@ -24,50 +22,41 @@ Navbar Styles
             color: #fff;
             background-color: $nav-item-color;
         }
-
         > li > a:hover,
         > li > a:focus:hover {
             color: #fff;
             background-color: $nav-item-alt-color;
             @include transition(background .3s ease-in-out);
         }
-
         > li.active > a,
         > li.active > a:focus {
             color: #fff !important;
             background-color: $nav-item-alt-color;
         }
-
         > li.active > a:hover,
         > li.active > a:focus:hover {
             background-color: $nav-item-alt-color;
         }
     }
-
     .navbar-toggle {
         border-color: #555;
-
         .icon-bar {
             background-color: #fff;
         }
     }
-
     .navbar-toggle:hover,
     .navbar-toggle:focus {
         background-color: #555;
     }
-    
     .navbar-collapse,
     .navbar-form {
         border-color: #fff;
     }
-    
     .navbar-img {
         height: 55px;
         padding: 10px 0 0 0;
         @include transition(all .5s ease-in-out);
     }
-    
     .navbar-img-home {
         height: 80px;
     }
@@ -79,23 +68,19 @@ Navbar Styles
             padding-right: 30px;
         }
     }
-
     .navbar-transition {
         padding: 20px 0 0 0;
         background-color: transparent;
         border-bottom: 0;
         @include transition(background .5s ease-in-out, padding .5s ease-in-out);
-        
         .container-fluid {
             margin: 0 15px 0 15px;
         }
     }
-    
     .navbar-transition.navbar-collapse {
         padding: 0;
         background-color: $nav-color;
         border-bottom: 1px solid rgba(255, 255, 255, .3);
-        
         .navbar-img {
             height: 45px;
         }

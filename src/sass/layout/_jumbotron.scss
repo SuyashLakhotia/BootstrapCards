@@ -7,7 +7,6 @@ Jumbotron Styles
     color: #fff;
     background: #000;
     position: relative;
-
     .delayed-entry {
         @include animation-delay(0.5s);
         @include animation-duration(1s);
@@ -19,7 +18,6 @@ Jumbotron Styles
         font-family: Code, $heading-font-stack;
         font-weight: $font-light;
     }
-
     #tagline {
         font-family: Code, $heading-font-stack;
         font-weight: $font-light;
@@ -36,7 +34,6 @@ Jumbotron Styles
     left: 0;
     margin-right: auto;
     margin-left: auto;
-
     .btn-scroll,
     .btn-scroll:focus {
         font-size: 40px;
@@ -47,7 +44,6 @@ Jumbotron Styles
         border: 2px solid #fff;
         border-radius: 50%;
     }
-
     .btn-scroll:hover {
         color: #000;
         border: 2px solid #fff;
@@ -58,26 +54,21 @@ Jumbotron Styles
 @include medium-screens-up {
     .jumbotron-big {
         height: 100vh;
-
         .jumbotron-content {
             position: relative;
             top: 45%;
             @include transform(translateY(-50%));
-
             #title {
                 font-size: 720%;
             }
         }
     }
-
     .jumbotron-small {
         height: 60vh;
-
         .jumbotron-content {
             position: relative;
             top: 55%;
             @include transform(translateY(-50%));
-
             #title {
                 font-size: 500%;
             }
@@ -89,20 +80,16 @@ Jumbotron Styles
     .jumbotron-big {
         min-height: 60vh;
     }
-
     .jumbotron-small {
         min-height: 50vh;
     }
-
     .jumbotron-content {
         padding-top: 40px;
         padding-bottom: 80px;
-        
         #title {
             font-size: 350%;
             padding-top: 60px;
         }
-        
         #tagline {
             font-size: 150%;
         }

@@ -11,21 +11,19 @@ Blog Post Styles
         color: #fff;
         margin-top: 0;
     }
-
     .blogpost-time {
+        font-family: Code, $heading-font-stack;
         font-size: 120%;
         font-weight: $font-thin;
         padding: 20px 0 0 0;
         text-align: center;
         color: #fff;
-    }   
-    
+    }
 }
 
 .content-blogpost {
     padding-top: 20px;
     padding-bottom: 20px;
-
     .blog-post {
         text-align: justify;
     }
@@ -37,12 +35,10 @@ Blog Post Styles
             font-size: 300%;
             padding-top: 75px;
         }
-
         .blogpost-time {
             font-size: 120%;
         }
     }
-
     .content-blogpost .blog-post {
         text-align: left;
     }

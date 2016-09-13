@@ -6,10 +6,8 @@ Home Page Styles
     position: relative;
     padding-top: 20px;
     padding-bottom: 20px;
-    
     .card-big {
         h3 {
-            font-family: 'Raleway', $heading-font-stack;
             font-weight: $font-normal;
             margin-bottom: 30px;
             letter-spacing: 2px;
@@ -17,14 +15,11 @@ Home Page Styles
     }
 }
 
-
 .card-labels {
     margin-top: 25px;
-
     .card-label {
         text-align: center;
     }
-
     .card-label .label {
         font-size: 13px;
         font-weight: $font-light;
@@ -36,15 +31,10 @@ Home Page Styles
     }
 }
 
-.stamps-section {
+.card-stamps {
     margin-bottom: 15px;
-
-    > h6 {
-        font-size: 18px;
-        font-weight: $font-medium;
-    }
-
-    .stamp {
+    .card-stamp {
+        font-family: $body-font-stack;
         font-weight: $font-light;
         color: white;
         border: 5px solid #fff;
@@ -52,32 +42,31 @@ Home Page Styles
         background-color: #434343;
         box-shadow: 0 0 0 3px #434343;
     }
-
-    h4.stamp {
+    h4.card-stamp {
         font-size: 16px;
     }
-
-    h5.stamp {
+    h5.card-stamp {
         font-size: 15px;
     }
-
-    h6.stamp {
+    h6.card-stamp {
         font-size: 14px;
     }
 }
 
-.custom-blockquote {
+.card-blockquote {
     border-left: 5px solid #d6d6d6;
     border-right: 5px solid #d6d6d6;
     background-color: #f6f6f6;
 }
 
-.project {
-    margin-top: 25px;
-
-    .project-details {
-        font-size: 14px;
-        text-align: center;
-        color: #696969;
+.card-projects {
+    .project {
+        margin-top: 25px;
+        .project-details {
+            font-family: $body-font-stack;
+            font-size: 14px;
+            text-align: center;
+            color: #696969;
+        }
     }
 }
