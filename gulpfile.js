@@ -62,15 +62,11 @@ gulp.task('copyFonts', function () {
 
 // Watch Files For Changes
 gulp.task('watch', ['browserSync', 'bootlint', 'sass', 'lint', 'copyJS', 'copyHTML', 'copyImg', 'copyFonts'], function() {
-    gulp.watch('src/sass/**/*.scss', ['sass']);
-    gulp.watch('src/js/**/*.js', ['lint', 'copyJS']);
-    gulp.watch('src/*.html', ['bootlint', 'copyHTML']);
-    gulp.watch('src/img/*.*', ['copyImg']);
-    gulp.watch('src/fonts/*.*', ['copyFonts']);
-    gulp.watch('src/*.html', browserSync.reload);
-    gulp.watch('js/**/*.js', browserSync.reload);
-    gulp.watch('src/img', browserSync.reload);
-    gulp.watch('src/fonts', browserSync.reload);
+    gulp.watch('src/sass/**/*.scss', ['sass', browserSync.reload]);
+    gulp.watch('src/js/**/*.js', ['lint', 'copyJS', browserSync.reload]);
+    gulp.watch('src/*.html', ['bootlint', 'copyHTML', browserSync.reload]);
+    gulp.watch('src/img/*.*', ['copyImg', browserSync.reload]);
+    gulp.watch('src/fonts/*.*', ['copyFonts', browserSync.reload]);
 });
 
 // Default Task
