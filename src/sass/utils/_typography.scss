@@ -3,7 +3,7 @@
     src: url('../fonts/CODE.otf');
 }
 
-$body-font-stack: 'Lato', 'Myriad Pro', sans-serif;
+$body-font-stack: 'Open Sans', 'Myriad Pro', sans-serif;
 $heading-font-stack: 'Raleway', 'Lucida Grande', sans-serif;
 
 $font-thin: 100;
@@ -16,8 +16,9 @@ $font-bold: 700;
 
 body {
     font-family: $body-font-stack;
-    font-size: 16px;
+    font-size: 15px;
     line-height: 1.5;
+    color: #333;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -51,7 +52,7 @@ h6 {
 }
 
 p {
-    font-size: 16px;
+    font-size: 15px;
 }
 
 a {

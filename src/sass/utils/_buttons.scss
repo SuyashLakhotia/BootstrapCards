@@ -24,10 +24,16 @@
 }
 
 .btn-default {
-    font-size: 16px;
+    font-size: 15px;
 }
 
 .btn-big {
     font-size: 18px;
     padding: 10px 10px;
+}
+
+@include medium-screens-up {
+    .btn {
+        max-width: 300px;
+    }
 }

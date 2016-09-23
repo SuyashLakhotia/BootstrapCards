@@ -3,24 +3,26 @@ Jumbotron Styles
 *******************************************************************************/
 
 .jumbotron-wrapper {
-    padding: 0 40px;
+    padding: 0 10px;
     color: #fff;
     background: #000;
     position: relative;
     .delayed-entry {
-        @include animation-delay(0.5s);
         @include animation-duration(1s);
+        @include animation-delay(0.5s);
     }
 }
 
 .jumbotron-content {
     #title {
-        font-family: Code, $heading-font-stack;
-        font-weight: $font-light;
+        font-family: 'Code', $heading-font-stack;
+        font-weight: $font-bold;
+        letter-spacing: 8px;
     }
     #tagline {
-        font-family: Code, $heading-font-stack;
+        font-family: 'Code', $heading-font-stack;
         font-weight: $font-light;
+        letter-spacing: 3px;
         padding-top: 10px;
         padding-bottom: 30px;
     }
@@ -36,9 +38,6 @@ Jumbotron Styles
     margin-left: auto;
     .btn-scroll,
     .btn-scroll:focus {
-        font-size: 40px;
-        width: 65px;
-        height: 65px;
         @include transition(all .3s ease-in-out);
         color: #fff;
         border: 2px solid #fff;
@@ -46,14 +45,22 @@ Jumbotron Styles
     }
     .btn-scroll:hover {
         color: #000;
-        border: 2px solid #fff;
         background-color: #fff;
+    }
+}
+
+@include large-screens-only {
+    .btn-scroll-wrapper .btn-scroll {
+        font-size: 40px;
+        width: 65px;
+        height: 65px;
     }
 }
 
 @include medium-screens-up {
     .jumbotron-big {
         height: 100vh;
+        max-height: 850px;
         .jumbotron-content {
             position: relative;
             top: 45%;
@@ -76,6 +83,14 @@ Jumbotron Styles
     }
 }
 
+@include medium-screens-only {
+    .btn-scroll-wrapper .btn-scroll {
+        font-size: 32px;
+        width: 55px;
+        height: 55px;
+    }
+}
+
 @include small-screens-only {
     .jumbotron-big {
         min-height: 60vh;
@@ -87,11 +102,17 @@ Jumbotron Styles
         padding-top: 40px;
         padding-bottom: 80px;
         #title {
-            font-size: 350%;
+            font-size: 320%;
             padding-top: 60px;
+            letter-spacing: normal;
         }
         #tagline {
             font-size: 150%;
         }
+    }
+    .btn-scroll-wrapper .btn-scroll {
+        font-size: 28px;
+        width: 50px;
+        height: 50px;
     }
 }

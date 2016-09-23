@@ -39,7 +39,7 @@
 }
 
 @mixin large-screens-only {
-    @media only screen and (min-width: 1024px) {
+    @media screen and (min-width: 992px) {
         @content;
     }
 }
@@ -51,13 +51,13 @@
 }
 
 @mixin medium-screens-only {
-    @media screen and (min-width: 768px) and (max-width: 1023px) {
+    @media screen and (min-width: 768px) and (max-width: 991px) {
         @content;
     }
 }
 
 @mixin small-screens-only {
-    @media only screen and (max-width: 767px) {
+    @media screen and (max-width: 767px) {
         @content;
     }
 }

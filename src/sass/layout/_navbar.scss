@@ -53,12 +53,9 @@ Navbar Styles
         border-color: #fff;
     }
     .navbar-img {
-        height: 55px;
+        height: 45px;
         padding: 10px 0 0 0;
         @include transition(all .5s ease-in-out);
-    }
-    .navbar-img-home {
-        height: 80px;
     }
 }
 
@@ -66,6 +63,18 @@ Navbar Styles
     .navbar {
         > .container-fluid {
             padding-right: 30px;
+        }
+        .navbar-nav {
+            > li > a,
+            > li > a:focus {
+                background-color: transparent;
+            }
+        }
+        .navbar-img {
+            height: 60px;
+        }
+        .navbar-img-home {
+            height: 80px;
         }
     }
     .navbar-transition {
@@ -87,15 +96,8 @@ Navbar Styles
     }
 }
 
-@include medium-screens-only {
-    .navbar-default .navbar-img {
-        height: 45px;
-    }
-}
-
 @include small-screens-only {
     .navbar-default .navbar-img {
-        height: 45px;
         margin-top: 3px;
         padding: 5px 10px;
     }

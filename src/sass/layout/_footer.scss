@@ -4,16 +4,16 @@ Footer Styles
 
 .footer {
     width: 100%;
-    padding: 10px 0 0 0;
     color: #fff;
     background: #000;
     p {
         font-size: 14px;
-    }
-    a {
-        color: #fff;
-    }
-    a:hover {
-        text-decoration: underline;
+        padding: 20px 0 10px 0;
+        a {
+            color: #fff;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
     }
 }
