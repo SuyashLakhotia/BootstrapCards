@@ -30,25 +30,26 @@
 
 #### Contents of Source Folder &amp; Overview of Gulp Tasks
 ```
-| - src/
-| - | - fonts/
-|   | - img/
-|   | - js/
-|   | - sass/
-|   |   | - layout/
-|   |   | - pages/
-|   |   | - utils/
-|   |   | - main.scss
-|   | - blog-post.html
-|   | - blog.html
-|   | - index.html
+BootstrapCards/
+└── src/
+    ├── fonts/
+    ├── img/
+    ├── js/
+    ├── sass/
+    │   ├── layout/
+    │   ├── pages/
+    │   ├── utils/
+    │   └── main.scss
+    ├── blog-post.html
+    ├── blog.html
+    └── index.html
 ```
 
 - `src/fonts/`: Contains all custom fonts. Gulp copies them over to `dist/fonts/`.
 - `src/img/`: Contains all images. Gulp copies them over to `dist/img/`.
 - `src/js/`: Contains all custom JavaScript files. Gulp lints them and then copies them over to `dist/js/`.
 - `src/sass/`: Contains all custom styles. Gulp compiles `main.scss` into `dist/css/cards.css`.
-- `src/*.html`: Gulp copies them over to `dist/`.
+- `src/*.html`: Gulp lints the Bootstrap styles and then copies the files over to `dist/`.
 
 ##### Sass Files
 - `sass/layout/`: Contains styles for the cards, navbar, jumbotrons &amp; footer.
