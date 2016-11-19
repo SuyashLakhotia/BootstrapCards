@@ -467,7 +467,7 @@ Home Page Styles
 .card-stamps .card-stamp {
   font-family: "Open Sans", "Myriad Pro", sans-serif;
   font-weight: 300;
-  letter-spacing: 2px;
+  letter-spacing: 1px;
   color: white;
   border: 5px solid #fff;
   padding: 10px;
