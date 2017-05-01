@@ -8,7 +8,6 @@ var sass = require('gulp-sass');
 var rename = require('gulp-rename');
 var bootlint = require('gulp-bootlint');
 
-
 // Init BrowserSync
 gulp.task('browserSync', function() {
     browserSync.init({ server: { baseDir: 'dist' } });
