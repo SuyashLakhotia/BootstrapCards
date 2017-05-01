@@ -1,9 +1,4 @@
-@font-face {
-    font-family: Code;
-    src: url('../fonts/CODE.otf');
-}
-
-$body-font-stack: 'Open Sans', 'Myriad Pro', sans-serif;
+$body-font-stack: 'Open Sans', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
 $heading-font-stack: 'Raleway', 'Lucida Grande', sans-serif;
 
 $font-thin: 100;
@@ -14,9 +9,13 @@ $font-bold: 700;
 
 /******************************************************************************/
 
+html {
+    font-size: 62.5%;
+}
+
 body {
     font-family: $body-font-stack;
-    font-size: 15px;
+    font-size: 1.5rem;
     line-height: 1.5;
     color: #333;
 }
@@ -28,31 +27,31 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-    font-size: 36px;
+    font-size: 3.6rem;
 }
 
 h2 {
-    font-size: 32px;
+    font-size: 3.2rem;
 }
 
 h3 {
-    font-size: 28px;
+    font-size: 2.8rem;
 }
 
 h4 {
-    font-size: 24px;
+    font-size: 2.4rem;
 }
 
 h5 {
-    font-size: 20px;
+    font-size: 2.0rem;
 }
 
 h6 {
-    font-size: 18px;
+    font-size: 1.8rem;
 }
 
 p {
-    font-size: 15px;
+    font-size: 1.5rem;
 }
 
 a {

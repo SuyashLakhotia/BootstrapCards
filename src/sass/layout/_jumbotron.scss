@@ -15,12 +15,10 @@ Jumbotron Styles
 
 .jumbotron-content {
     #title {
-        font-family: 'Code', $heading-font-stack;
-        font-weight: $font-bold;
+        font-weight: $font-medium;
         letter-spacing: 8px;
     }
     #tagline {
-        font-family: 'Code', $heading-font-stack;
         font-weight: $font-light;
         letter-spacing: 3px;
         padding-top: 10px;
@@ -51,7 +49,7 @@ Jumbotron Styles
 
 @include large-screens-only {
     .btn-scroll-wrapper .btn-scroll {
-        font-size: 40px;
+        font-size: 4.0rem;
         width: 65px;
         height: 65px;
     }
@@ -66,7 +64,7 @@ Jumbotron Styles
             top: 45%;
             @include transform(translateY(-50%));
             #title {
-                font-size: 720%;
+                font-size: 11.5rem;
             }
         }
     }
@@ -77,7 +75,7 @@ Jumbotron Styles
             top: 55%;
             @include transform(translateY(-50%));
             #title {
-                font-size: 500%;
+                font-size: 8rem;
             }
         }
     }
@@ -85,7 +83,7 @@ Jumbotron Styles
 
 @include medium-screens-only {
     .btn-scroll-wrapper .btn-scroll {
-        font-size: 32px;
+        font-size: 3.2rem;
         width: 55px;
         height: 55px;
     }
@@ -102,16 +100,16 @@ Jumbotron Styles
         padding-top: 40px;
         padding-bottom: 80px;
         #title {
-            font-size: 320%;
+            font-size: 5.1rem;
             padding-top: 60px;
             letter-spacing: normal;
         }
         #tagline {
-            font-size: 150%;
+            font-size: 2.4rem;
         }
     }
     .btn-scroll-wrapper .btn-scroll {
-        font-size: 28px;
+        font-size: 2.8rem;
         width: 50px;
         height: 50px;
     }

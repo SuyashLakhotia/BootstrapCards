@@ -21,7 +21,7 @@ Home Page Styles
         text-align: center;
     }
     .card-label .label {
-        font-size: 13px;
+        font-size: 1.3rem;
         font-weight: $font-light;
         display: inline-block;
         min-width: 50%;
@@ -44,13 +44,13 @@ Home Page Styles
         box-shadow: 0 0 0 3px #434343;
     }
     h4.card-stamp {
-        font-size: 16px;
+        font-size: 1.6rem;
     }
     h5.card-stamp {
-        font-size: 15px;
+        font-size: 1.5rem;
     }
     h6.card-stamp {
-        font-size: 14px;
+        font-size: 1.4rem;
     }
 }
 
@@ -64,8 +64,8 @@ Home Page Styles
     .project {
         margin-top: 25px;
         .project-details {
-            font-family: $body-font-stack;
-            font-size: 15px;
+            font-weight: $font-bold;
+            font-size: 1.5rem;
             text-align: center;
             color: #696969;
         }

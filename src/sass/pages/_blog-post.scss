@@ -4,18 +4,17 @@ Blog Post Styles
 
 .jumbotron-blogpost {
     .blogpost-title {
-        font-family: 'Code', $heading-font-stack;
-        font-size: 450%;
-        font-weight: $font-bold;
+        font-weight: $font-medium;
+        font-size: 7.2rem;
         letter-spacing: 3px;
         text-align: center;
         color: #fff;
         margin-top: 0;
     }
     .blogpost-time {
-        font-family: 'Code', $heading-font-stack;
-        font-size: 120%;
+        font-size: 1.9rem;
         font-weight: $font-thin;
+        font-family: $body-font-stack;
         letter-spacing: 3px;
         padding: 20px 0 0 0;
         text-align: center;
@@ -34,7 +33,7 @@ Blog Post Styles
 @include small-screens-only {
     .jumbotron-blogpost {
         .blogpost-title {
-            font-size: 300%;
+            font-size: 4.8rem;
             padding-top: 75px;
         }
     }
