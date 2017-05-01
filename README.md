@@ -1,7 +1,5 @@
 # Bootstrap Cards
-&mdash; *Responsive Bootstrap template implementing card-based design. Demo [here](http://suyashlakhotia.com/BootstrapCards/).*
-
-![Screenshot](demo.gif)
+> Responsive Bootstrap template implementing card-based design. Demo [here](http://suyashlakhotia.com/BootstrapCards/).
 
 ## How to Install
 
@@ -9,10 +7,10 @@
 
 1. Download this repo [here](https://github.com/SuyashLakhotia/BootstrapCards/archive/master.zip).
 2. Navigate to the `dist/` folder on Terminal.
-3. Install all the Bower dependencies using `bower install`.
+3. Install all the Bower dependencies using `bower install` or update them using `bower update`.
 4. Copy the contents of `dist/` to your project folder.
 
-### Customising *Bootstrap Cards*
+### Customizing *Bootstrap Cards*
 
 #### Setup
 
@@ -29,6 +27,7 @@
 3. To change the JS, edit the JS code inside `src/js/`.
 
 #### Contents of Source Folder &amp; Overview of Gulp Tasks
+
 ```
 BootstrapCards/
 └── src/
@@ -59,7 +58,7 @@ BootstrapCards/
 
 ## Bower Components
 
-Listed below are all the Bower components used in *Bootstrap Cards*. The ones in **bold** are necessary while the others are optional.
+Listed below are all the Bower components used in *Bootstrap Cards*. The ones in **bold** are necessary while the others are optional, however, leaving them out might *break* some things.
 
 - **Normalize.css** ([https://necolas.github.io/normalize.css/](https://necolas.github.io/normalize.css/))
 - **jQuery** ([https://jquery.com/](https://jquery.com/))
