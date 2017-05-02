@@ -7,7 +7,7 @@
 
 1. Download this repo [here](https://github.com/SuyashLakhotia/BootstrapCards/archive/master.zip).
 2. Navigate to the `dist/` folder on Terminal.
-3. Install all the Bower dependencies using `bower install` or update them using `bower update`.
+3. Update the Bower dependencies using `bower update`.
 4. Copy the contents of `dist/` to your project folder.
 
 ### Customizing *Bootstrap Cards*
@@ -17,7 +17,7 @@
 1. Download this repo [here](https://github.com/SuyashLakhotia/BootstrapCards/archive/master.zip).
 2. Install Gulp globally using `npm install -g gulp-cli`.
 3. Install the Node.js modules needed in this project using `npm install`.
-4. Navigate to `dist/` and install all the Bower dependencies using `bower install`.
+4. Navigate to `dist/` and update all the Bower dependencies using `bower update`.
 5. (Optional) This project uses [HTML-CSS-JS Prettify for Sublime Text](https://github.com/victorporof/Sublime-HTMLPrettify) to maintain a consistent coding style. The custom options are defined in `.jsbeautifyrc`.
 
 #### Writing Code
@@ -48,7 +48,7 @@ BootstrapCards/
 - `src/img/`: Contains all images. Gulp copies them over to `dist/img/`.
 - `src/js/`: Contains all custom JavaScript files. Gulp lints them and then copies them over to `dist/js/`.
 - `src/sass/`: Contains all custom styles. Gulp compiles `main.scss` into `dist/css/cards.css`.
-- `src/*.html`: Gulp lints the Bootstrap styles and then copies the files over to `dist/`.
+- `src/*.html`: Gulp lints the Bootstrap classes used and then copies the files over to `dist/`.
 
 ##### Sass Files
 - `sass/layout/`: Contains styles for the cards, navbar, jumbotrons &amp; footer.
@@ -58,7 +58,7 @@ BootstrapCards/
 
 ## Bower Components
 
-Listed below are all the Bower components used in *Bootstrap Cards*. The ones in **bold** are necessary while the others are optional, however, leaving them out might *break* some things.
+Listed below are all the Bower components used in *Bootstrap Cards*. The ones in **bold** are necessary while the others are optional, however, leaving them out *might* break some things.
 
 - **Normalize.css** ([https://necolas.github.io/normalize.css/](https://necolas.github.io/normalize.css/))
 - **jQuery** ([https://jquery.com/](https://jquery.com/))
